@@ -14,5 +14,10 @@
 <body>
   {% block content %} {% endblock %}
 </body>
+<script src="{% static 'myapp/js/calendar.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  let csrf_token = '{{ csrf_token }}'
+</script>
 
 </html>
